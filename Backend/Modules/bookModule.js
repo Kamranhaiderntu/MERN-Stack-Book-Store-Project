@@ -9,7 +9,7 @@ const bookSchema = new mongoose.Schema({
         required: true
     },
     published: {
-        type: Date,
+        type: Number,
         required: true
     }
 },
@@ -18,4 +18,4 @@ const bookSchema = new mongoose.Schema({
     }
 );
 
-export const Book = mongoose.model('Cat', bookSchema);
+export const Book = mongoose.model('Book', bookSchema);
